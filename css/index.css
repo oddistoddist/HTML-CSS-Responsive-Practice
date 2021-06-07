@@ -1,0 +1,285 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+	max-width: 100%; /* can never be bigger than parent*/
+	padding: 0;
+	margin: 0;
+	border: 1px solid purple;
+}
+
+/* general styles */
+html {
+	font-size: 62.5%; /*default browser size is 16 px. 62.5% of 16 pixels is 10 px. also gives user control over font size due to % beingscalable*/
+}
+body {
+	font-size: 1.8rem;
+	line-height: 1.5; /*takes fontsize and multiplies it by number */
+	color: #4f4f4f;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #fbfffb;
+}
+a {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Oxygen', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #266035;
+}
+h1 {
+	color: #fbfffb;
+	font-size: 5rem;
+	align-items: center;
+}
+h2 {
+	font-size: 3.5rem;
+	text-align: center;
+}
+h3 {
+	font-size: 2.5rem;
+}
+button {
+	background: #266035;
+	padding: 3% 4%;
+	font-size: 1.8rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fbfffb;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999; /* make sure stuff scrolls behind nav */
+	background: rgba(255, 255, 255, 0.8);
+}
+.logo {
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img {
+	width: 70%;
+}
+.links {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+/*topsectionstyles*/
+#top {
+	height: 90vh;
+	background: url('../images/header.jpg') no-repeat bottom;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#top button {
+	background-color: #fbfffb;
+	border: 2-x solid #266035;
+	color: #266035;
+	margin-top: 5%;
+	transition: 2s;
+}
+#top button:hover {
+	color: #fbfffb;
+	background: #266035;
+}
+#about {
+	height: 80vh;
+	background: url('../images/about-img.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#about .two {
+	width: 25%;
+	margin-right: 10%;
+}
+
+.bigcontainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+.shoptxt,
+.bg-img {
+	width: 50%;
+}
+.shoptxt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6% 4%;
+	text-align: center;
+}
+.shoptxt div {
+	width: 65%;
+}
+.shoptxt div button {
+	margin-top: 5%;
+}
+.bg-img {
+	background: cover center no-repeat;
+}
+.succulants {
+	background: url('../images/succulants.jpg');
+}
+.cacti {
+	background: url('../images/cacti.jpg');
+}
+.tropicals {
+	background: url('../images/tropicals.jpg');
+}
+footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+footer h2 {
+	width: 100%;
+	color: #fff;
+}
+.left,
+.right {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.left div,
+.right img {
+	width: 60%;
+}
+.bottom {
+	width: 100%;
+	text-align: right;
+	margin: 10%;
+}
